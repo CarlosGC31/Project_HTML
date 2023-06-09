@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CinemaHub+</title>
+  <style>
+    /* Estilos CSS básicos */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #0D0D0D;
+    }
+
+    header {
+      background-color: #027373;
+      color: #F2E7DC;
+      padding: 20px;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 40px;
+      height: auto;
+      margin-right: 10px;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-bar input[type="text"] {
+      padding: 5px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .profile-notifications {
+      display: flex;
+      align-items: center;
+    }
+
+    .profile-notifications img {
+      width: 25px;
+      height: auto;
+      margin-right: 10px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+      text-align: left;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      color: #F2E7DC;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #038C7F;
+      color: #F2E7DC;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    .movie-list {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+
+    .movie {
+      flex-basis: 30%;
+      margin-bottom: 20px;
+    }
+
+    .movie img {
+      width: 100%;
+      height: auto;
+    }
+
+    .movie-title {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #F2E7DC;
+    }
+
+    .filters {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 40px;
+    }
+
+    .filter {
+      margin-left: 10px;
+      color: #F2E7DC;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="ruta-logo.png" alt="Logo CinemaHub+">
+      <h1>CinemaHub+</h1>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar">
+    </div>
+    <div class="profile-notifications">
+      <img src="ruta-icono-perfil.png" alt="Perfil">
+      <img src="ruta-icono-notificaciones.png" alt="Notificaciones">
+    </div>
+  </header>
+
+  <div class="container">
+    <h2>Bienvenido a CinemaHub+</h2>
+    <p>Descubre una amplia selección de películas, horarios de proyección, reseñas y mucho más en CinemaHub+. ¡Sumérgete en el mundo del cine!</p>
+    <a href="#" class="cta-button">Explorar</a>
+
+    <h2>Cartelera actual</h2>
+    <div class="movie-list">
+      <div class="movie">
+        <img src="ruta-imagen-pelicula-1.jpg" alt="Pelicula 1">
+        <p class="movie-title">Pelicula 1</p>
+      </div>
+      <div class="movie">
+        <img src="ruta-imagen-pelicula-2.jpg" alt="Pelicula 2">
+        <p class="movie-title">Pelicula 2</p>
+      </div>
+      <div class="movie">
+        <img src="ruta-imagen-pelicula-3.jpg" alt="Pelicula 3">
+        <p class="movie-title">Pelicula 3</p>
+      </div>
+    </div>
+
+    <div class="filters">
+      <p class="filter">Filtro por cine</p>
+      <p class="filter">Filtro por distrito</p>
+    </div>
+  </div>
+</body>
+</html>
