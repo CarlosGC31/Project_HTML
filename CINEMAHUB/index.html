@@ -21,8 +21,9 @@
       text-align: left;
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
-     
+
     .logo {
       display: flex;
       align-items: center;
@@ -37,14 +38,15 @@
     .search-bar {
       display: flex;
       align-items: center;
-      width: 1000px;
+      width: 100%;
+      max-width: 400px;
     }
 
     .search-bar input[type="text"] {
-        padding: 5px;
-        border-radius: 45px;
-        border: none;
-        width: 900px;
+      padding: 5px;
+      border-radius: 45px;
+      border: none;
+      width: 100%;
     }
 
     .profile-notifications {
@@ -57,12 +59,13 @@
       height: auto;
       margin-right: 10px;
     }
-    .singup {
+
+    .signup {
       display: flex;
       align-items: center;
     }
 
-    .singup img {
+    .signup img {
       width: 80px;
       height: auto;
       margin-right: 10px;
@@ -95,19 +98,41 @@
       font-size: 20px;
       margin-top: 20px;
     }
+
     .CINEMA {
       background-color: hsl(174, 44%, 49%);
       color: hsl(0, 0%, 0%);
-      padding: 65px;
-      height: 50px;
+      padding: 50px;
       text-align: left;
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
 
+    .CINEMA h2 {
+      margin: 0;
+      font-size: 24px;
+      color: #FFFFFF;
+    }
 
+    .Nosotros {
+      background-color: #46b4a9;
+      color: hsl(0, 0%, 0%);
+      padding: 50px;
+      text-align: left;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .Nosotros h2 {
+      margin: 0;
+      font-size: 40px;
+      color: #FFFFFF;
+    }
     .movie-list {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       margin-top: 40px;
     }
@@ -116,12 +141,14 @@
       flex-basis: 30%;
       margin-bottom: 20px;
       margin-right: 30px;
+      text-align: center;
     }
 
     .movie img {
       width: 150px;
       height: 300px;
-     
+      object-fit: cover;
+      border-radius: 5px;
     }
 
     .movie-title {
@@ -132,13 +159,15 @@
 
     .filters {
       display: flex;
-      justify-content: flex-end;
+      justify-content: flex-start;
       margin-top: 40px;
+      margin-right: 40px;
     }
 
     .filter {
       margin-left: 10px;
-      color: #F2E7DC;
+      color: #000000;
+      margin-right: 40px;
     }
   </style>
 </head>
@@ -149,17 +178,17 @@
       <h1>CINEMAHUB+</h1>
     </div>
     <div class="search-bar">
-      <input type="text" placeholder="¿Que pelicula estas buscando?">
+      <input type="text" placeholder="¿Qué película estás buscando?">
     </div>
     <div class="profile-notifications">
-      <img src="campana.png" alt="Perfil">
+      <img src="campana.png" alt="Notificaciones">
       <img src="perfil.png" alt="Perfil">
-    <div class="singup">
-        <img src="login.png" alt="Perfil">
     </div>
+    <div class="signup">
+      <img src="login.png" alt="Registro">
     </div>
   </header>
-  <div class = "CINEMA">
+  <div class="CINEMA">
     <h2>CINEMAHUB+</h2>
     <h2>HOT THIS WEEK</h2>
   </div>
@@ -178,24 +207,24 @@
         <p class="movie-title">Mario Bros La Pelicula</p>
       </div>
       <div class="movie">
-        <img src="transformer.jpg" alt="Pelicula 3">
+        <img src="transformer.jpg" alt="Transformer: El despertar de las bestias">
         <p class="movie-title">Transformer: El despertar de las bestias</p>
       </div>
       <div class="movie">
-        <img src="oija.jpg" alt="Pelicula 3">
+        <img src="oija.jpg" alt="Ouija">
         <p class="movie-title">Ouija</p>
       </div>
-    </div>
-    
-    <div class="movie-list">
       <div class="movie">
-        <img src="41955.jpg" alt="John Wick 4">
-        <p class="movie-title">John Wick 4</p>
+        <img src="spider.jpg" alt="Spider-man: Cruzando el multiverso">
+        <p class="movie-title">Spider-man: Cruzando el multiverso</p>
       </div>
     </div>
-    <div class="filters">
-      <p class="filter">Filtro por cine</p>
-      <p class="filter">Filtro por distrito</p>
+  </div>
+    <div class="Nosotros">
+      <h2>NOSOTROS</h2>
+        <img src="nosotros.png" alt="Ouija">
+        <p>Nuestro emprendimiento</p>
+    </div>
     </div>
   </div>
 </body>
